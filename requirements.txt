@@ -16,11 +16,11 @@ bcrypt==4.0.1
 beautifulsoup4==4.12.2
 blinker==1.6.2
 branca==0.6.0
-Brotli @ file:///D:/bld/brotli-split_1687884251065/work
+
 cachetools==5.3.1
 certifi==2023.7.22
 cffi==1.15.1
-charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1688813409104/work
+
 chroma-hnswlib==0.7.2
 chromadb==0.4.8
 click==8.1.7

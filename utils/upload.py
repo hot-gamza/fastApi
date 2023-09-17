@@ -15,19 +15,19 @@ def allowed_file(filename):
         filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 async def handle_upload(files: List[UploadFile]) -> List[str]:
-    filenames = []
-    for file in files:
-        if allowed_file(file.filename):
-            filename = secure_filename(file.filename)
-            filepath = os.path.join(UPLOAD_FOLDER, filename)
+    # filenames = []
+    # for file in files:
+    if allowed_file(files.filename):
+        filename = secure_filename(files.filename)
+        filepath = os.path.join(UPLOAD_FOLDER, filename)
 
-            # 파일을 비동기적으로 읽고 저장
-            file_bytes = await file.read()
-            with open(filepath, "wb") as buffer:
-                buffer.write(file_bytes)
-            
-            filenames.append(filepath)
-    return filenames
+        # 파일을 비동기적으로 읽고 저장
+        file_bytes = await files.read()
+        with open(filepath, "wb") as buffer:
+            buffer.write(file_bytes)
+        
+        filename.append(filepath)
+    return filename
 
 async def multi_upload(files: List[UploadFile]) -> List[str]:
     filepaths = []

@@ -13,8 +13,10 @@ template_img_path = os.path.join("template", "template.png")
 #TODO downlaod는 안되고, 파일 그 자체를 전송
 @router.post("/standard")
 async def index(male_files: List[UploadFile] = File(...), female_files: List[UploadFile] = File(...)):
-    male_filenames = await handle_upload(male_files)
-    female_filenames = await handle_upload(female_files)
+    # male_filenames = await handle_upload(male_files)
+    # female_filenames = await handle_upload(female_files)
+    male_filenames = await handle_upload('imgFile')[0]
+    female_filenames = await handle_upload('imgFile')[1]
 
     if not male_filenames or not female_filenames:
         raise HTTPException(status_code=400, detail="Failed to upload files")
