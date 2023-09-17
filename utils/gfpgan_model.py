@@ -8,9 +8,9 @@ import os
 from io import BytesIO
 
 # 함수를 비동기 함수로 변경
-async def gfpgan_gogo(file: Union[UploadFile, str]):
+def gfpgan_gogo(file: Union[UploadFile, str]):
     if isinstance(file, UploadFile):
-        file_contents = await file.read()
+        file_contents = file.read()
     else:  # str이라고 가정
         with open(file, 'rb') as f:
             file_contents = f.read()

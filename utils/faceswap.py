@@ -5,6 +5,9 @@ import numpy as np
 from insightface.app import FaceAnalysis
 from .gfpgan_model import gfpgan_gogo
 import os
+import base64
+import requests
+
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 inswapper_path = os.path.join(current_dir,'..' ,'models', 'inswapper_128.onnx')
@@ -15,7 +18,7 @@ app.prepare(ctx_id=0, det_size=(640, 640))
 swapper = insightface.model_zoo.get_model(inswapper_path, download=False, download_zip=False)
 
 
-async def faceswap(template_img, male_face_img, female_face_img):
+def faceswap(template_img, male_face_img, female_face_img):
     if not os.path.exists(os.path.join(current_dir, '..', 'images', 'result')):
         os.makedirs(os.path.join(current_dir, '..', 'images', 'result'))
 
@@ -52,11 +55,23 @@ async def faceswap(template_img, male_face_img, female_face_img):
         cnt+=1
 
     cv2.imwrite(result_path, result)
-    gfp_result = np.array(await gfpgan_gogo(result_path))  # await 사용
+    gfp_result = np.array(gfpgan_gogo(result_path))  # await 사용
     gfp_result = cv2.cvtColor(gfp_result, cv2.COLOR_BGR2RGB)
 
     relative_path = os.path.join('images', 'result', fn)
     cv2.imwrite(relative_path, gfp_result)
     print(f"File saved at: {relative_path}")
 
-    return [os.path.join('images', 'result', fn)]
+    # IMAGE TO ASCII CODE(BASE64)
+    if relative_path:
+        with open(relative_path, "rb") as f:
+          file_data_base64 = base64.b64encode(f.read()).decode('utf-8')
+
+    payload = {"file_data": file_data_base64}
+    url = 'http://192.168.0.70:8080/img'
+    print(f"File has been sent safely")
+    requests.post(url, json=payload)
+    
+
+
+    # return [os.path.join('images', 'result', fn)]
