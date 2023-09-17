@@ -30,10 +30,10 @@ async def faceswap(template_img, male_face_img, female_face_img):
     fn = f'fs_{dn}.jpg'
 
     # 얼굴 이미지
-    male_img_read = cv2.imread(male_face_img[0])
+    male_img_read = cv2.imread(male_face_img)
     male_copy_face = app.get(male_img_read)[0]
 
-    female_img_read = cv2.imread(female_face_img[0])
+    female_img_read = cv2.imread(female_face_img)
     female_copy_face = app.get(female_img_read)[0]
 
     cnt = 0
