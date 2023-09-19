@@ -5,6 +5,7 @@ import numpy as np
 from insightface.app import FaceAnalysis
 from .gfpgan_model import gfpgan_gogo
 import os
+from typing import List
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
 inswapper_path = os.path.join(current_dir,'..' ,'models', 'inswapper_128.onnx')
@@ -15,48 +16,55 @@ app.prepare(ctx_id=0, det_size=(640, 640))
 swapper = insightface.model_zoo.get_model(inswapper_path, download=False, download_zip=False)
 
 
-async def faceswap(template_img, male_face_img, female_face_img):
-    if not os.path.exists(os.path.join(current_dir, '..', 'images', 'result')):
-        os.makedirs(os.path.join(current_dir, '..', 'images', 'result'))
-
-    print(f"Current working directory: {os.getcwd()}")
-    print(type(male_face_img), male_face_img)
-
-    # 커플 템플릿
+async def faceswap(template_img: str, male_face_imgs: List[str], female_face_imgs: List[str]) -> List[str]:
+    result_filepaths = []
     template_img = cv2.imread(template_img)
     template_faces = app.get(template_img)
     print("detected number of faces: ", len(template_faces))
-    dn = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    fn = f'fs_{dn}.jpg'
 
-    # 얼굴 이미지
-    male_img_read = cv2.imread(male_face_img)
-    male_copy_face = app.get(male_img_read)[0]
+    for male_face_img, female_face_img in zip(male_face_imgs, female_face_imgs):
+        if not os.path.exists(os.path.join(current_dir, '..', 'images', 'result')):
+            os.makedirs(os.path.join(current_dir, '..', 'images', 'result'))
 
-    female_img_read = cv2.imread(female_face_img)
-    female_copy_face = app.get(female_img_read)[0]
+        print(f"Current working directory: {os.getcwd()}")
+        print(type(male_face_img), male_face_img)
+        # 커플 템플릿
 
-    cnt = 0
+        dn = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        fn = f'fs_{dn}.jpg'
+        result_path = os.path.join(current_dir, '..','images', 'result', fn) 
 
-    for find_face in template_faces:
-        if cnt == 0:
-            if find_face['gender'] == 0:
-                result = swapper.get(template_img, find_face, female_copy_face, paste_back=True)
+        print(f"Processing {male_face_img} and {female_face_img}")
+        # 얼굴 이미지
+        male_img_read = cv2.imread(male_face_img)
+        male_copy_face = app.get(male_img_read)[0]
+
+        female_img_read = cv2.imread(female_face_img)
+        female_copy_face = app.get(female_img_read)[0]
+
+        cnt = 0
+
+        for find_face in template_faces:
+            if cnt == 0:
+                if find_face['gender'] == 0:
+                    result = swapper.get(template_img, find_face, female_copy_face, paste_back=True)
+                else:
+                    result = swapper.get(template_img, find_face, male_copy_face, paste_back=True)
             else:
-                result = swapper.get(template_img, find_face, male_copy_face, paste_back=True)
-        else:
-            if find_face['gender'] == 0:
-                result = swapper.get(result, find_face, female_copy_face, paste_back=True)
-            else:
-                result = swapper.get(result, find_face, male_copy_face, paste_back=True)
-        cnt+=1
+                if find_face['gender'] == 0:
+                    result = swapper.get(result, find_face, female_copy_face, paste_back=True)
+                else:
+                    result = swapper.get(result, find_face, male_copy_face, paste_back=True)
+            cnt+=1
 
-    cv2.imwrite(result_path, result)
-    gfp_result = np.array(await gfpgan_gogo(result_path))  # await 사용
-    gfp_result = cv2.cvtColor(gfp_result, cv2.COLOR_BGR2RGB)
+        cv2.imwrite(result_path, result)
+        gfp_result = np.array(await gfpgan_gogo(result_path))
+        gfp_result = cv2.cvtColor(gfp_result, cv2.COLOR_BGR2RGB)
 
-    relative_path = os.path.join('images', 'result', fn)
-    cv2.imwrite(relative_path, gfp_result)
-    print(f"File saved at: {relative_path}")
+        relative_path = os.path.join('images', 'result', fn)
+        cv2.imwrite(relative_path, gfp_result)
+        print(f"File saved at: {relative_path}")
+        result_filepath = os.path.join('images', 'result', fn)
+        result_filepaths.append(result_filepath)
 
-    return [os.path.join('images', 'result', fn)]
+    return result_filepaths
