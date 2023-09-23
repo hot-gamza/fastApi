@@ -1,0 +1,1348 @@
+redis_insight is up-to-date
+redis is up-to-date
+Attaching to redis_insight, redis
+[36mredis            |[0m 1:C 17 Sep 2023 08:30:37.042 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 17 Sep 2023 08:30:37.042 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 17 Sep 2023 08:30:37.042 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 17 Sep 2023 08:30:37.043 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 17 Sep 2023 08:30:37.043 # Server initialized
+[36mredis            |[0m 1:M 17 Sep 2023 08:30:37.043 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 17 Sep 2023 08:30:37.043 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 17 Sep 2023 08:30:37.043 * Ready to accept connections
+[36mredis            |[0m 1:M 17 Sep 2023 09:49:19.263 * 1 changes in 3600 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 09:49:19.264 * Background saving started by pid 18
+[36mredis            |[0m 18:C 17 Sep 2023 09:49:19.277 * DB saved on disk
+[36mredis            |[0m 18:C 17 Sep 2023 09:49:19.277 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 09:49:19.364 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 09:56:28.409 # Possible SECURITY ATTACK detected. It looks like somebody is sending POST or Host: commands to Redis. This is likely due to an attacker attempting to use Cross Protocol Scripting to compromise your Redis instance. Connection aborted.
+[36mredis            |[0m 1:signal-handler (1694944691) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:11.861 # User requested shutdown...
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:11.861 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:11.863 * DB saved on disk
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:11.863 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 17 Sep 2023 09:58:26.408 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 17 Sep 2023 09:58:26.408 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 17 Sep 2023 09:58:26.408 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:26.408 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:26.408 # Server initialized
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:26.408 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:26.408 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:26.409 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:26.409 * RDB age 15 seconds
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:26.409 * RDB memory usage when created 0.85 Mb
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:26.409 * DB loaded from disk: 0.000 seconds
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:26.409 * Ready to accept connections
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:51.474 # Possible SECURITY ATTACK detected. It looks like somebody is sending POST or Host: commands to Redis. This is likely due to an attacker attempting to use Cross Protocol Scripting to compromise your Redis instance. Connection aborted.
+[36mredis            |[0m 1:M 17 Sep 2023 10:25:55.510 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 10:25:55.511 * Background saving started by pid 18
+[36mredis            |[0m 18:C 17 Sep 2023 10:25:55.529 * DB saved on disk
+[36mredis            |[0m 18:C 17 Sep 2023 10:25:55.530 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 10:25:55.612 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 10:30:56.081 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 10:30:56.081 * Background saving started by pid 19
+[36mredis            |[0m 19:C 17 Sep 2023 10:30:56.095 * DB saved on disk
+[36mredis            |[0m 19:C 17 Sep 2023 10:30:56.096 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 10:30:56.182 * Background saving terminated with success
+[36mredis            |[0m 1:signal-handler (1694946825) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 17 Sep 2023 10:33:45.942 # User requested shutdown...
+[36mredis            |[0m 1:M 17 Sep 2023 10:33:45.942 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 17 Sep 2023 10:33:45.944 * DB saved on disk
+[36mredis            |[0m 1:M 17 Sep 2023 10:33:45.944 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 17 Sep 2023 10:51:45.176 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 17 Sep 2023 10:51:45.176 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 17 Sep 2023 10:51:45.176 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 17 Sep 2023 10:51:45.177 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 17 Sep 2023 10:51:45.177 # Server initialized
+[36mredis            |[0m 1:M 17 Sep 2023 10:51:45.177 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 17 Sep 2023 10:51:45.177 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 17 Sep 2023 10:51:45.177 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 17 Sep 2023 10:51:45.177 * RDB age 1080 seconds
+[36mredis            |[0m 1:M 17 Sep 2023 10:51:45.177 * RDB memory usage when created 0.82 Mb
+[36mredis            |[0m 1:M 17 Sep 2023 10:51:45.177 * DB loaded from disk: 0.000 seconds
+[36mredis            |[0m 1:M 17 Sep 2023 10:51:45.177 * Ready to accept connections
+[36mredis            |[0m 1:M 17 Sep 2023 10:57:05.544 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 10:57:05.544 * Background saving started by pid 19
+[36mredis            |[0m 19:C 17 Sep 2023 10:57:05.547 * DB saved on disk
+[36mredis            |[0m 19:C 17 Sep 2023 10:57:05.548 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 10:57:05.645 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 11:02:06.057 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 11:02:06.057 * Background saving started by pid 20
+[36mredis            |[0m 20:C 17 Sep 2023 11:02:06.072 * DB saved on disk
+[36mredis            |[0m 20:C 17 Sep 2023 11:02:06.072 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 11:02:06.158 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 11:07:07.068 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 11:07:07.069 * Background saving started by pid 21
+[36mredis            |[0m 21:C 17 Sep 2023 11:07:07.083 * DB saved on disk
+[36mredis            |[0m 21:C 17 Sep 2023 11:07:07.084 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 11:07:07.170 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 11:16:54.028 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 11:16:54.029 * Background saving started by pid 22
+[36mredis            |[0m 22:C 17 Sep 2023 11:16:54.033 * DB saved on disk
+[36mredis            |[0m 22:C 17 Sep 2023 11:16:54.034 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 11:16:54.129 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 11:28:26.425 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 11:28:26.425 * Background saving started by pid 23
+[36mredis            |[0m 23:C 17 Sep 2023 11:28:26.438 * DB saved on disk
+[36mredis            |[0m 23:C 17 Sep 2023 11:28:26.438 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 11:28:26.525 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 11:56:31.684 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 11:56:31.685 * Background saving started by pid 24
+[36mredis            |[0m 24:C 17 Sep 2023 11:56:31.698 * DB saved on disk
+[36mredis            |[0m 24:C 17 Sep 2023 11:56:31.698 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 11:56:31.786 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 12:01:33.382 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 12:01:33.382 * Background saving started by pid 25
+[36mredis            |[0m 25:C 17 Sep 2023 12:01:33.385 * DB saved on disk
+[36mredis            |[0m 25:C 17 Sep 2023 12:01:33.385 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 12:01:33.483 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 12:06:34.047 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 12:06:34.048 * Background saving started by pid 26
+[36mredis            |[0m 26:C 17 Sep 2023 12:06:34.067 * DB saved on disk
+[36mredis            |[0m 26:C 17 Sep 2023 12:06:34.067 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 12:06:34.148 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 12:12:20.691 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 12:12:20.692 * Background saving started by pid 27
+[36mredis            |[0m 27:C 17 Sep 2023 12:12:20.695 * DB saved on disk
+[36mredis            |[0m 27:C 17 Sep 2023 12:12:20.695 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 12:12:20.793 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 12:17:21.075 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 12:17:21.075 * Background saving started by pid 28
+[36mredis            |[0m 28:C 17 Sep 2023 12:17:21.090 * DB saved on disk
+[36mredis            |[0m 28:C 17 Sep 2023 12:17:21.090 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 12:17:21.176 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 12:22:22.019 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 12:22:22.019 * Background saving started by pid 29
+[36mredis            |[0m 29:C 17 Sep 2023 12:22:22.038 * DB saved on disk
+[36mredis            |[0m 29:C 17 Sep 2023 12:22:22.039 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 12:22:22.120 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 12:45:20.351 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 12:45:20.351 * Background saving started by pid 30
+[36mredis            |[0m 30:C 17 Sep 2023 12:45:20.354 * DB saved on disk
+[36mredis            |[0m 30:C 17 Sep 2023 12:45:20.354 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 12:45:20.452 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 12:50:21.099 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 12:50:21.099 * Background saving started by pid 31
+[36mredis            |[0m 31:C 17 Sep 2023 12:50:21.114 * DB saved on disk
+[36mredis            |[0m 31:C 17 Sep 2023 12:50:21.115 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 12:50:21.200 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 12:56:55.881 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 12:56:55.881 * Background saving started by pid 32
+[36mredis            |[0m 32:C 17 Sep 2023 12:56:55.893 * DB saved on disk
+[36mredis            |[0m 32:C 17 Sep 2023 12:56:55.893 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 12:56:55.981 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 13:10:53.067 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 13:10:53.068 * Background saving started by pid 33
+[36mredis            |[0m 33:C 17 Sep 2023 13:10:53.089 * DB saved on disk
+[36mredis            |[0m 33:C 17 Sep 2023 13:10:53.089 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 13:10:53.169 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 14:10:54.059 * 1 changes in 3600 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 14:10:54.059 * Background saving started by pid 34
+[36mredis            |[0m 34:C 17 Sep 2023 14:10:54.079 * DB saved on disk
+[36mredis            |[0m 34:C 17 Sep 2023 14:10:54.079 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 14:10:54.160 * Background saving terminated with success
+[36mredis            |[0m 1:signal-handler (1694960435) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 17 Sep 2023 14:20:35.246 # User requested shutdown...
+[36mredis            |[0m 1:M 17 Sep 2023 14:20:35.246 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 17 Sep 2023 14:20:35.261 * DB saved on disk
+[36mredis            |[0m 1:M 17 Sep 2023 14:20:35.261 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 17 Sep 2023 19:21:23.202 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 17 Sep 2023 19:21:23.203 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 17 Sep 2023 19:21:23.203 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 17 Sep 2023 19:21:23.203 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 17 Sep 2023 19:21:23.203 # Server initialized
+[36mredis            |[0m 1:M 17 Sep 2023 19:21:23.203 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 17 Sep 2023 19:21:23.203 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 17 Sep 2023 19:21:23.204 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 17 Sep 2023 19:21:23.204 * RDB age 18048 seconds
+[36mredis            |[0m 1:M 17 Sep 2023 19:21:23.204 * RDB memory usage when created 0.91 Mb
+[36mredis            |[0m 1:M 17 Sep 2023 19:21:23.204 * DB loaded from disk: 0.000 seconds
+[36mredis            |[0m 1:M 17 Sep 2023 19:21:23.204 * Ready to accept connections
+[36mredis            |[0m 1:signal-handler (1694978623) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 17 Sep 2023 19:23:43.435 # User requested shutdown...
+[36mredis            |[0m 1:M 17 Sep 2023 19:23:43.435 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 17 Sep 2023 19:23:43.439 * DB saved on disk
+[36mredis            |[0m 1:M 17 Sep 2023 19:23:43.440 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 17 Sep 2023 19:24:13.538 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 17 Sep 2023 19:24:13.538 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 8 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[36mredis            |[0m 1:C 17 Sep 2023 19:24:13.538 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 17 Sep 2023 19:24:13.539 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 17 Sep 2023 19:24:13.539 # Server initialized
+[36mredis            |[0m 1:M 17 Sep 2023 19:24:13.539 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 17 Sep 2023 19:24:13.539 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 17 Sep 2023 19:24:13.539 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 17 Sep 2023 19:24:13.539 * RDB age 30 seconds
+[36mredis            |[0m 1:M 17 Sep 2023 19:24:13.539 * RDB memory usage when created 0.81 Mb
+[36mredis            |[0m 1:M 17 Sep 2023 19:24:13.539 * DB loaded from disk: 0.000 seconds
+[36mredis            |[0m 1:M 17 Sep 2023 19:24:13.539 * Ready to accept connections
+[36mredis            |[0m 1:C 18 Sep 2023 02:13:56.370 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 18 Sep 2023 02:13:56.370 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 18 Sep 2023 02:13:56.370 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 18 Sep 2023 02:13:56.372 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 18 Sep 2023 02:13:56.372 # Server initialized
+[36mredis            |[0m 1:M 18 Sep 2023 02:13:56.372 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 18 Sep 2023 02:13:56.372 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 18 Sep 2023 02:13:56.373 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 18 Sep 2023 02:13:56.373 * RDB age 24613 seconds
+[36mredis            |[0m 1:M 18 Sep 2023 02:13:56.373 * RDB memory usage when created 0.81 Mb
+[36mredis            |[0m 1:M 18 Sep 2023 02:13:56.374 * DB loaded from disk: 0.001 seconds
+[36mredis            |[0m 1:M 18 Sep 2023 02:13:56.374 * Ready to accept connections
+[36mredis            |[0m 1:M 19 Sep 2023 06:03:15.492 * 1 changes in 3600 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 06:03:15.493 * Background saving started by pid 18
+[36mredis            |[0m 18:C 19 Sep 2023 06:03:15.497 * DB saved on disk
+[36mredis            |[0m 18:C 19 Sep 2023 06:03:15.497 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 06:03:15.593 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 06:13:35.116 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 06:13:35.116 * Background saving started by pid 19
+[36mredis            |[0m 19:C 19 Sep 2023 06:13:35.140 * DB saved on disk
+[36mredis            |[0m 19:C 19 Sep 2023 06:13:35.140 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 06:13:35.217 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 06:18:36.074 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 06:18:36.075 * Background saving started by pid 20
+[36mredis            |[0m 20:C 19 Sep 2023 06:18:36.090 * DB saved on disk
+[36mredis            |[0m 20:C 19 Sep 2023 06:18:36.090 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 06:18:36.175 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 06:23:37.078 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 06:23:37.078 * Background saving started by pid 21
+[36mredis            |[0m 21:C 19 Sep 2023 06:23:37.097 * DB saved on disk
+[36mredis            |[0m 21:C 19 Sep 2023 06:23:37.098 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 06:23:37.179 * Background saving terminated with success
+[36mredis            |[0m 1:C 19 Sep 2023 06:25:03.382 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 06:25:03.382 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 06:25:03.382 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 06:25:03.382 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 06:25:03.383 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 06:25:03.383 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 06:25:03.383 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 06:25:03.383 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 06:25:03.383 * RDB age 86 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 06:25:03.383 * RDB memory usage when created 1.01 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 06:25:03.384 * DB loaded from disk: 0.001 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 06:25:03.384 * Ready to accept connections
+[36mredis            |[0m 1:signal-handler (1695106276) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 06:51:16.876 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 06:51:16.876 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 06:51:16.891 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 06:51:16.891 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 08:10:14.001 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 08:10:14.001 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 08:10:14.001 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 08:10:14.002 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 08:10:14.002 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 08:10:14.002 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 08:10:14.002 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 08:10:14.002 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 08:10:14.002 * RDB age 4738 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 08:10:14.002 * RDB memory usage when created 0.82 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 08:10:14.003 * DB loaded from disk: 0.001 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 08:10:14.003 * Ready to accept connections
+[36mredis            |[0m 1:M 19 Sep 2023 08:15:15.034 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 08:15:15.035 * Background saving started by pid 18
+[36mredis            |[0m 18:C 19 Sep 2023 08:15:15.050 * DB saved on disk
+[36mredis            |[0m 18:C 19 Sep 2023 08:15:15.050 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 08:15:15.136 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 08:20:16.067 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 08:20:16.067 * Background saving started by pid 19
+[36mredis            |[0m 19:C 19 Sep 2023 08:20:16.080 * DB saved on disk
+[36mredis            |[0m 19:C 19 Sep 2023 08:20:16.080 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 08:20:16.167 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 08:25:17.043 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 08:25:17.043 * Background saving started by pid 20
+[36mredis            |[0m 20:C 19 Sep 2023 08:25:17.063 * DB saved on disk
+[36mredis            |[0m 20:C 19 Sep 2023 08:25:17.064 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 08:25:17.144 * Background saving terminated with success
+[36mredis            |[0m 1:signal-handler (1695113218) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 08:46:58.810 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 08:46:58.810 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 08:46:58.812 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 08:46:58.812 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 08:47:18.851 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 08:47:18.851 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 08:47:18.851 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 08:47:18.852 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 08:47:18.852 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 08:47:18.852 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 08:47:18.852 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 08:47:18.852 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 08:47:18.852 * RDB age 20 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 08:47:18.852 * RDB memory usage when created 0.86 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 08:47:18.853 * DB loaded from disk: 0.001 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 08:47:18.853 * Ready to accept connections
+[36mredis            |[0m 1:M 19 Sep 2023 09:05:04.271 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 09:05:04.271 * Background saving started by pid 18
+[36mredis            |[0m 18:C 19 Sep 2023 09:05:04.274 * DB saved on disk
+[36mredis            |[0m 18:C 19 Sep 2023 09:05:04.274 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 09:05:04.372 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 09:10:05.029 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 09:10:05.030 * Background saving started by pid 19
+[36mredis            |[0m 19:C 19 Sep 2023 09:10:05.045 * DB saved on disk
+[36mredis            |[0m 19:C 19 Sep 2023 09:10:05.046 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 09:10:05.131 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 09:15:06.036 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 09:15:06.036 * Background saving started by pid 20
+[36mredis            |[0m 20:C 19 Sep 2023 09:15:06.054 * DB saved on disk
+[36mredis            |[0m 20:C 19 Sep 2023 09:15:06.054 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 09:15:06.137 * Background saving terminated with success
+[36mredis            |[0m 1:signal-handler (1695118231) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:31.888 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:31.888 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:31.893 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:31.893 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 10:10:58.893 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 10:10:58.893 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 10:10:58.893 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:58.894 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:58.894 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:58.894 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:58.894 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:58.895 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:58.895 * RDB age 27 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:58.895 * RDB memory usage when created 1.17 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:58.895 * DB loaded from disk: 0.001 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:58.895 * Ready to accept connections
+[36mredis            |[0m 1:M 19 Sep 2023 10:15:59.006 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 10:15:59.006 * Background saving started by pid 18
+[36mredis            |[0m 18:C 19 Sep 2023 10:15:59.009 * DB saved on disk
+[36mredis            |[0m 18:C 19 Sep 2023 10:15:59.009 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 10:15:59.107 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 10:21:00.047 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 10:21:00.048 * Background saving started by pid 19
+[36mredis            |[0m 19:C 19 Sep 2023 10:21:00.066 * DB saved on disk
+[36mredis            |[0m 19:C 19 Sep 2023 10:21:00.066 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 10:21:00.149 * Background saving terminated with success
+[36mredis            |[0m 1:signal-handler (1695119455) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 10:30:55.882 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 10:30:55.882 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 10:30:55.885 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 10:30:55.885 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 10:31:16.986 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 10:31:16.986 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 10:31:16.986 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 10:31:16.987 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 10:31:16.987 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 10:31:16.987 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 10:31:16.987 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 10:31:16.987 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 10:31:16.987 * RDB age 21 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 10:31:16.987 * RDB memory usage when created 1.11 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 10:31:16.988 * DB loaded from disk: 0.001 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 10:31:16.988 * Ready to accept connections
+[36mredis            |[0m 1:M 19 Sep 2023 10:37:07.612 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 10:37:07.612 * Background saving started by pid 18
+[36mredis            |[0m 18:C 19 Sep 2023 10:37:07.626 * DB saved on disk
+[36mredis            |[0m 18:C 19 Sep 2023 10:37:07.626 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 10:37:07.712 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 10:42:08.042 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 10:42:08.042 * Background saving started by pid 19
+[36mredis            |[0m 19:C 19 Sep 2023 10:42:08.056 * DB saved on disk
+[36mredis            |[0m 19:C 19 Sep 2023 10:42:08.057 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 10:42:08.142 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 10:47:09.032 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 10:47:09.032 * Background saving started by pid 20
+[36mredis            |[0m 20:C 19 Sep 2023 10:47:09.057 * DB saved on disk
+[36mredis            |[0m 20:C 19 Sep 2023 10:47:09.057 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 10:47:09.133 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 11:47:10.100 * 1 changes in 3600 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 11:47:10.100 * Background saving started by pid 21
+[36mredis            |[0m 21:C 19 Sep 2023 11:47:10.123 * DB saved on disk
+[36mredis            |[0m 21:C 19 Sep 2023 11:47:10.124 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 11:47:10.201 * Background saving terminated with success
+[36mredis            |[0m 1:signal-handler (1695127284) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:24.157 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:24.157 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:24.161 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:24.161 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 12:41:40.859 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 12:41:40.859 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 12:41:40.859 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:40.860 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:40.860 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:40.860 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:40.860 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:40.861 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:40.861 * RDB age 16 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:40.861 * RDB memory usage when created 1.16 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:40.863 * DB loaded from disk: 0.003 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:40.863 * Ready to accept connections
+[36mredis            |[0m 1:M 19 Sep 2023 12:50:48.019 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 12:50:48.020 * Background saving started by pid 19
+[36mredis            |[0m 19:C 19 Sep 2023 12:50:48.028 * DB saved on disk
+[36mredis            |[0m 19:C 19 Sep 2023 12:50:48.029 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 12:50:48.120 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 12:55:49.023 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 12:55:49.023 * Background saving started by pid 20
+[36mredis            |[0m 20:C 19 Sep 2023 12:55:49.048 * DB saved on disk
+[36mredis            |[0m 20:C 19 Sep 2023 12:55:49.049 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 12:55:49.124 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 13:00:50.077 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 13:00:50.077 * Background saving started by pid 21
+[36mredis            |[0m 21:C 19 Sep 2023 13:00:50.102 * DB saved on disk
+[36mredis            |[0m 21:C 19 Sep 2023 13:00:50.103 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 13:00:50.178 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 13:07:55.728 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 13:07:55.728 * Background saving started by pid 22
+[36mredis            |[0m 22:C 19 Sep 2023 13:07:55.744 * DB saved on disk
+[36mredis            |[0m 22:C 19 Sep 2023 13:07:55.745 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 13:07:55.828 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 13:12:56.012 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 13:12:56.013 * Background saving started by pid 23
+[36mredis            |[0m 23:C 19 Sep 2023 13:12:56.037 * DB saved on disk
+[36mredis            |[0m 23:C 19 Sep 2023 13:12:56.037 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 13:12:56.113 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 13:25:14.584 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 13:25:14.584 * Background saving started by pid 24
+[36mredis            |[0m 24:C 19 Sep 2023 13:25:14.602 * DB saved on disk
+[36mredis            |[0m 24:C 19 Sep 2023 13:25:14.603 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 13:25:14.685 * Background saving terminated with success
+[36mredis            |[0m 1:signal-handler (1695131475) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 13:51:15.794 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 13:51:15.794 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 13:51:15.797 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 13:51:15.797 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 13:52:13.700 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 13:52:13.700 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 13:52:13.700 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 13:52:13.701 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 13:52:13.701 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 13:52:13.701 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 13:52:13.701 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 13:52:13.701 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 13:52:13.701 * RDB age 58 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 13:52:13.701 * RDB memory usage when created 1.23 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 13:52:13.703 * DB loaded from disk: 0.002 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 13:52:13.703 * Ready to accept connections
+[36mredis            |[0m 1:M 19 Sep 2023 14:00:49.888 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 14:00:49.889 * Background saving started by pid 18
+[36mredis            |[0m 18:C 19 Sep 2023 14:00:49.892 * DB saved on disk
+[36mredis            |[0m 18:C 19 Sep 2023 14:00:49.892 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 14:00:49.990 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 14:05:50.077 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 14:05:50.077 * Background saving started by pid 19
+[36mredis            |[0m 19:C 19 Sep 2023 14:05:50.093 * DB saved on disk
+[36mredis            |[0m 19:C 19 Sep 2023 14:05:50.093 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 14:05:50.178 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 14:10:51.099 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 14:10:51.100 * Background saving started by pid 20
+[36mredis            |[0m 20:C 19 Sep 2023 14:10:51.121 * DB saved on disk
+[36mredis            |[0m 20:C 19 Sep 2023 14:10:51.121 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 14:10:51.200 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 14:15:52.051 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 14:15:52.051 * Background saving started by pid 21
+[36mredis            |[0m 21:C 19 Sep 2023 14:15:52.072 * DB saved on disk
+[36mredis            |[0m 21:C 19 Sep 2023 14:15:52.072 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 14:15:52.151 * Background saving terminated with success
+Stopping redis         ... 
+Stopping redis_insight ... 
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+
+ERROR: for redis  ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+ERROR: for redis_insight  ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 416, in _make_request
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1348, in getresponse
+Couldn't connect to Docker daemon at http+docker://localhost - is it running?
+
+If it's at a non-standard location, specify the URL with the DOCKER_HOST environment variable.
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 416, in _make_request
+Gracefully stopping... (press Ctrl+C again to force)
+Starting redis ... 
+Starting redis_insight ... 
+[2A[2KStarting redis         ... [32mdone[0m[2B[1A[2KStarting redis_insight ... [32mdone[0m[1BAttaching to redis, redis_insight
+[36mredis            |[0m 1:C 19 Sep 2023 15:40:14.681 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 15:40:14.681 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 15:40:14.681 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:14.681 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:14.681 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:14.681 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:14.681 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:14.681 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:14.681 * RDB age 10 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:14.681 * RDB memory usage when created 1.31 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:14.683 * DB loaded from disk: 0.002 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:14.683 * Ready to accept connections
+[36mredis            |[0m 1:M 19 Sep 2023 15:45:15.083 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 15:45:15.083 * Background saving started by pid 19
+[36mredis            |[0m 19:C 19 Sep 2023 15:45:15.098 * DB saved on disk
+[36mredis            |[0m 19:C 19 Sep 2023 15:45:15.099 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 15:45:15.183 * Background saving terminated with success
+Exception in thread Thread-7:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+Exception in thread Thread-6:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+Couldn't connect to Docker daemon at http+docker://localhost - is it running?
+
+If it's at a non-standard location, specify the URL with the DOCKER_HOST environment variable.
+Gracefully stopping... (press Ctrl+C again to force)
+redis is up-to-date
+redis_insight is up-to-date
+Attaching to redis, redis_insight
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 8 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 8 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 8 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[36mredis            |[0m 1:C 17 Sep 2023 08:30:37.042 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 17 Sep 2023 08:30:37.042 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 17 Sep 2023 08:30:37.042 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 17 Sep 2023 08:30:37.043 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 17 Sep 2023 08:30:37.043 # Server initialized
+[36mredis            |[0m 1:M 17 Sep 2023 08:30:37.043 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 17 Sep 2023 08:30:37.043 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 17 Sep 2023 08:30:37.043 * Ready to accept connections
+[36mredis            |[0m 1:M 17 Sep 2023 09:49:19.263 * 1 changes in 3600 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 09:49:19.264 * Background saving started by pid 18
+[36mredis            |[0m 18:C 17 Sep 2023 09:49:19.277 * DB saved on disk
+[36mredis            |[0m 18:C 17 Sep 2023 09:49:19.277 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 09:49:19.364 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 09:56:28.409 # Possible SECURITY ATTACK detected. It looks like somebody is sending POST or Host: commands to Redis. This is likely due to an attacker attempting to use Cross Protocol Scripting to compromise your Redis instance. Connection aborted.
+[36mredis            |[0m 1:signal-handler (1694944691) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:11.861 # User requested shutdown...
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:11.861 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:11.863 * DB saved on disk
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:11.863 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 17 Sep 2023 09:58:26.408 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 17 Sep 2023 09:58:26.408 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 17 Sep 2023 09:58:26.408 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:26.408 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:26.408 # Server initialized
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:26.408 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:26.408 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:26.409 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:26.409 * RDB age 15 seconds
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:26.409 * RDB memory usage when created 0.85 Mb
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:26.409 * DB loaded from disk: 0.000 seconds
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:26.409 * Ready to accept connections
+[36mredis            |[0m 1:M 17 Sep 2023 09:58:51.474 # Possible SECURITY ATTACK detected. It looks like somebody is sending POST or Host: commands to Redis. This is likely due to an attacker attempting to use Cross Protocol Scripting to compromise your Redis instance. Connection aborted.
+[36mredis            |[0m 1:M 17 Sep 2023 10:25:55.510 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 10:25:55.511 * Background saving started by pid 18
+[36mredis            |[0m 18:C 17 Sep 2023 10:25:55.529 * DB saved on disk
+[36mredis            |[0m 18:C 17 Sep 2023 10:25:55.530 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 10:25:55.612 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 10:30:56.081 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 10:30:56.081 * Background saving started by pid 19
+[36mredis            |[0m 19:C 17 Sep 2023 10:30:56.095 * DB saved on disk
+[36mredis            |[0m 19:C 17 Sep 2023 10:30:56.096 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 10:30:56.182 * Background saving terminated with success
+[36mredis            |[0m 1:signal-handler (1694946825) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 17 Sep 2023 10:33:45.942 # User requested shutdown...
+[36mredis            |[0m 1:M 17 Sep 2023 10:33:45.942 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 17 Sep 2023 10:33:45.944 * DB saved on disk
+[36mredis            |[0m 1:M 17 Sep 2023 10:33:45.944 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 17 Sep 2023 10:51:45.176 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 17 Sep 2023 10:51:45.176 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 17 Sep 2023 10:51:45.176 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 17 Sep 2023 10:51:45.177 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 17 Sep 2023 10:51:45.177 # Server initialized
+[36mredis            |[0m 1:M 17 Sep 2023 10:51:45.177 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 17 Sep 2023 10:51:45.177 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 17 Sep 2023 10:51:45.177 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 17 Sep 2023 10:51:45.177 * RDB age 1080 seconds
+[36mredis            |[0m 1:M 17 Sep 2023 10:51:45.177 * RDB memory usage when created 0.82 Mb
+[36mredis            |[0m 1:M 17 Sep 2023 10:51:45.177 * DB loaded from disk: 0.000 seconds
+[36mredis            |[0m 1:M 17 Sep 2023 10:51:45.177 * Ready to accept connections
+[36mredis            |[0m 1:M 17 Sep 2023 10:57:05.544 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 10:57:05.544 * Background saving started by pid 19
+[36mredis            |[0m 19:C 17 Sep 2023 10:57:05.547 * DB saved on disk
+[36mredis            |[0m 19:C 17 Sep 2023 10:57:05.548 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 10:57:05.645 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 11:02:06.057 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 11:02:06.057 * Background saving started by pid 20
+[36mredis            |[0m 20:C 17 Sep 2023 11:02:06.072 * DB saved on disk
+[36mredis            |[0m 20:C 17 Sep 2023 11:02:06.072 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 11:02:06.158 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 11:07:07.068 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 11:07:07.069 * Background saving started by pid 21
+[36mredis            |[0m 21:C 17 Sep 2023 11:07:07.083 * DB saved on disk
+[36mredis            |[0m 21:C 17 Sep 2023 11:07:07.084 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 11:07:07.170 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 11:16:54.028 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 11:16:54.029 * Background saving started by pid 22
+[36mredis            |[0m 22:C 17 Sep 2023 11:16:54.033 * DB saved on disk
+[36mredis            |[0m 22:C 17 Sep 2023 11:16:54.034 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 11:16:54.129 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 11:28:26.425 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 11:28:26.425 * Background saving started by pid 23
+[36mredis            |[0m 23:C 17 Sep 2023 11:28:26.438 * DB saved on disk
+[36mredis            |[0m 23:C 17 Sep 2023 11:28:26.438 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 11:28:26.525 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 11:56:31.684 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 11:56:31.685 * Background saving started by pid 24
+[36mredis            |[0m 24:C 17 Sep 2023 11:56:31.698 * DB saved on disk
+[36mredis            |[0m 24:C 17 Sep 2023 11:56:31.698 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 11:56:31.786 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 12:01:33.382 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 12:01:33.382 * Background saving started by pid 25
+[36mredis            |[0m 25:C 17 Sep 2023 12:01:33.385 * DB saved on disk
+[36mredis            |[0m 25:C 17 Sep 2023 12:01:33.385 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 12:01:33.483 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 12:06:34.047 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 12:06:34.048 * Background saving started by pid 26
+[36mredis            |[0m 26:C 17 Sep 2023 12:06:34.067 * DB saved on disk
+[36mredis            |[0m 26:C 17 Sep 2023 12:06:34.067 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 12:06:34.148 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 12:12:20.691 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 12:12:20.692 * Background saving started by pid 27
+[36mredis            |[0m 27:C 17 Sep 2023 12:12:20.695 * DB saved on disk
+[36mredis            |[0m 27:C 17 Sep 2023 12:12:20.695 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 12:12:20.793 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 12:17:21.075 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 12:17:21.075 * Background saving started by pid 28
+[36mredis            |[0m 28:C 17 Sep 2023 12:17:21.090 * DB saved on disk
+[36mredis            |[0m 28:C 17 Sep 2023 12:17:21.090 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 12:17:21.176 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 12:22:22.019 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 12:22:22.019 * Background saving started by pid 29
+[36mredis            |[0m 29:C 17 Sep 2023 12:22:22.038 * DB saved on disk
+[36mredis            |[0m 29:C 17 Sep 2023 12:22:22.039 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 12:22:22.120 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 12:45:20.351 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 12:45:20.351 * Background saving started by pid 30
+[36mredis            |[0m 30:C 17 Sep 2023 12:45:20.354 * DB saved on disk
+[36mredis            |[0m 30:C 17 Sep 2023 12:45:20.354 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 12:45:20.452 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 12:50:21.099 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 12:50:21.099 * Background saving started by pid 31
+[36mredis            |[0m 31:C 17 Sep 2023 12:50:21.114 * DB saved on disk
+[36mredis            |[0m 31:C 17 Sep 2023 12:50:21.115 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 12:50:21.200 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 12:56:55.881 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 12:56:55.881 * Background saving started by pid 32
+[36mredis            |[0m 32:C 17 Sep 2023 12:56:55.893 * DB saved on disk
+[36mredis            |[0m 32:C 17 Sep 2023 12:56:55.893 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 12:56:55.981 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 13:10:53.067 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 13:10:53.068 * Background saving started by pid 33
+[36mredis            |[0m 33:C 17 Sep 2023 13:10:53.089 * DB saved on disk
+[36mredis            |[0m 33:C 17 Sep 2023 13:10:53.089 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 13:10:53.169 * Background saving terminated with success
+[36mredis            |[0m 1:M 17 Sep 2023 14:10:54.059 * 1 changes in 3600 seconds. Saving...
+[36mredis            |[0m 1:M 17 Sep 2023 14:10:54.059 * Background saving started by pid 34
+[36mredis            |[0m 34:C 17 Sep 2023 14:10:54.079 * DB saved on disk
+[36mredis            |[0m 34:C 17 Sep 2023 14:10:54.079 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 17 Sep 2023 14:10:54.160 * Background saving terminated with success
+[36mredis            |[0m 1:signal-handler (1694960435) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 17 Sep 2023 14:20:35.246 # User requested shutdown...
+[36mredis            |[0m 1:M 17 Sep 2023 14:20:35.246 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 17 Sep 2023 14:20:35.261 * DB saved on disk
+[36mredis            |[0m 1:M 17 Sep 2023 14:20:35.261 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 17 Sep 2023 19:21:23.202 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 17 Sep 2023 19:21:23.203 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 17 Sep 2023 19:21:23.203 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 17 Sep 2023 19:21:23.203 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 17 Sep 2023 19:21:23.203 # Server initialized
+[36mredis            |[0m 1:M 17 Sep 2023 19:21:23.203 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 17 Sep 2023 19:21:23.203 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 17 Sep 2023 19:21:23.204 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 17 Sep 2023 19:21:23.204 * RDB age 18048 seconds
+[36mredis            |[0m 1:M 17 Sep 2023 19:21:23.204 * RDB memory usage when created 0.91 Mb
+[36mredis            |[0m 1:M 17 Sep 2023 19:21:23.204 * DB loaded from disk: 0.000 seconds
+[36mredis            |[0m 1:M 17 Sep 2023 19:21:23.204 * Ready to accept connections
+[36mredis            |[0m 1:signal-handler (1694978623) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 17 Sep 2023 19:23:43.435 # User requested shutdown...
+[36mredis            |[0m 1:M 17 Sep 2023 19:23:43.435 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 17 Sep 2023 19:23:43.439 * DB saved on disk
+[36mredis            |[0m 1:M 17 Sep 2023 19:23:43.440 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 17 Sep 2023 19:24:13.538 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 17 Sep 2023 19:24:13.538 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 17 Sep 2023 19:24:13.538 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 17 Sep 2023 19:24:13.539 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 17 Sep 2023 19:24:13.539 # Server initialized
+[36mredis            |[0m 1:M 17 Sep 2023 19:24:13.539 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 17 Sep 2023 19:24:13.539 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 17 Sep 2023 19:24:13.539 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 17 Sep 2023 19:24:13.539 * RDB age 30 seconds
+[36mredis            |[0m 1:M 17 Sep 2023 19:24:13.539 * RDB memory usage when created 0.81 Mb
+[36mredis            |[0m 1:M 17 Sep 2023 19:24:13.539 * DB loaded from disk: 0.000 seconds
+[36mredis            |[0m 1:M 17 Sep 2023 19:24:13.539 * Ready to accept connections
+[36mredis            |[0m 1:C 18 Sep 2023 02:13:56.370 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 18 Sep 2023 02:13:56.370 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 18 Sep 2023 02:13:56.370 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 18 Sep 2023 02:13:56.372 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 18 Sep 2023 02:13:56.372 # Server initialized
+[36mredis            |[0m 1:M 18 Sep 2023 02:13:56.372 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 18 Sep 2023 02:13:56.372 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 18 Sep 2023 02:13:56.373 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 18 Sep 2023 02:13:56.373 * RDB age 24613 seconds
+[36mredis            |[0m 1:M 18 Sep 2023 02:13:56.373 * RDB memory usage when created 0.81 Mb
+[36mredis            |[0m 1:M 18 Sep 2023 02:13:56.374 * DB loaded from disk: 0.001 seconds
+[36mredis            |[0m 1:M 18 Sep 2023 02:13:56.374 * Ready to accept connections
+[36mredis            |[0m 1:M 19 Sep 2023 06:03:15.492 * 1 changes in 3600 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 06:03:15.493 * Background saving started by pid 18
+[36mredis            |[0m 18:C 19 Sep 2023 06:03:15.497 * DB saved on disk
+[36mredis            |[0m 18:C 19 Sep 2023 06:03:15.497 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 06:03:15.593 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 06:13:35.116 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 06:13:35.116 * Background saving started by pid 19
+[36mredis            |[0m 19:C 19 Sep 2023 06:13:35.140 * DB saved on disk
+[36mredis            |[0m 19:C 19 Sep 2023 06:13:35.140 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 06:13:35.217 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 06:18:36.074 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 06:18:36.075 * Background saving started by pid 20
+[36mredis            |[0m 20:C 19 Sep 2023 06:18:36.090 * DB saved on disk
+[36mredis            |[0m 20:C 19 Sep 2023 06:18:36.090 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 06:18:36.175 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 06:23:37.078 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 06:23:37.078 * Background saving started by pid 21
+[36mredis            |[0m 21:C 19 Sep 2023 06:23:37.097 * DB saved on disk
+[36mredis            |[0m 21:C 19 Sep 2023 06:23:37.098 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 06:23:37.179 * Background saving terminated with success
+[36mredis            |[0m 1:C 19 Sep 2023 06:25:03.382 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 06:25:03.382 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 06:25:03.382 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 06:25:03.382 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 06:25:03.383 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 06:25:03.383 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 06:25:03.383 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 06:25:03.383 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 06:25:03.383 * RDB age 86 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 06:25:03.383 * RDB memory usage when created 1.01 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 06:25:03.384 * DB loaded from disk: 0.001 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 06:25:03.384 * Ready to accept connections
+[36mredis            |[0m 1:signal-handler (1695106276) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 06:51:16.876 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 06:51:16.876 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 06:51:16.891 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 06:51:16.891 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 08:10:14.001 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 08:10:14.001 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 08:10:14.001 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 08:10:14.002 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 08:10:14.002 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 08:10:14.002 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 08:10:14.002 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 08:10:14.002 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 08:10:14.002 * RDB age 4738 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 08:10:14.002 * RDB memory usage when created 0.82 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 08:10:14.003 * DB loaded from disk: 0.001 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 08:10:14.003 * Ready to accept connections
+[36mredis            |[0m 1:M 19 Sep 2023 08:15:15.034 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 08:15:15.035 * Background saving started by pid 18
+[36mredis            |[0m 18:C 19 Sep 2023 08:15:15.050 * DB saved on disk
+[36mredis            |[0m 18:C 19 Sep 2023 08:15:15.050 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 08:15:15.136 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 08:20:16.067 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 08:20:16.067 * Background saving started by pid 19
+[36mredis            |[0m 19:C 19 Sep 2023 08:20:16.080 * DB saved on disk
+[36mredis            |[0m 19:C 19 Sep 2023 08:20:16.080 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 08:20:16.167 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 08:25:17.043 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 08:25:17.043 * Background saving started by pid 20
+[36mredis            |[0m 20:C 19 Sep 2023 08:25:17.063 * DB saved on disk
+[36mredis            |[0m 20:C 19 Sep 2023 08:25:17.064 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 08:25:17.144 * Background saving terminated with success
+[36mredis            |[0m 1:signal-handler (1695113218) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 08:46:58.810 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 08:46:58.810 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 08:46:58.812 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 08:46:58.812 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 08:47:18.851 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 08:47:18.851 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 08:47:18.851 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 08:47:18.852 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 08:47:18.852 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 08:47:18.852 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 08:47:18.852 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 08:47:18.852 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 08:47:18.852 * RDB age 20 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 08:47:18.852 * RDB memory usage when created 0.86 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 08:47:18.853 * DB loaded from disk: 0.001 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 08:47:18.853 * Ready to accept connections
+[36mredis            |[0m 1:M 19 Sep 2023 09:05:04.271 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 09:05:04.271 * Background saving started by pid 18
+[36mredis            |[0m 18:C 19 Sep 2023 09:05:04.274 * DB saved on disk
+[36mredis            |[0m 18:C 19 Sep 2023 09:05:04.274 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 09:05:04.372 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 09:10:05.029 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 09:10:05.030 * Background saving started by pid 19
+[36mredis            |[0m 19:C 19 Sep 2023 09:10:05.045 * DB saved on disk
+[36mredis            |[0m 19:C 19 Sep 2023 09:10:05.046 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 09:10:05.131 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 09:15:06.036 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 09:15:06.036 * Background saving started by pid 20
+[36mredis            |[0m 20:C 19 Sep 2023 09:15:06.054 * DB saved on disk
+[36mredis            |[0m 20:C 19 Sep 2023 09:15:06.054 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 09:15:06.137 * Background saving terminated with success
+[36mredis            |[0m 1:signal-handler (1695118231) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:31.888 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:31.888 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:31.893 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:31.893 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 10:10:58.893 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 10:10:58.893 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 10:10:58.893 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:58.894 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:58.894 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:58.894 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:58.894 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:58.895 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:58.895 * RDB age 27 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:58.895 * RDB memory usage when created 1.17 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:58.895 * DB loaded from disk: 0.001 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 10:10:58.895 * Ready to accept connections
+[36mredis            |[0m 1:M 19 Sep 2023 10:15:59.006 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 10:15:59.006 * Background saving started by pid 18
+[36mredis            |[0m 18:C 19 Sep 2023 10:15:59.009 * DB saved on disk
+[36mredis            |[0m 18:C 19 Sep 2023 10:15:59.009 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 10:15:59.107 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 10:21:00.047 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 10:21:00.048 * Background saving started by pid 19
+[36mredis            |[0m 19:C 19 Sep 2023 10:21:00.066 * DB saved on disk
+[36mredis            |[0m 19:C 19 Sep 2023 10:21:00.066 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 10:21:00.149 * Background saving terminated with success
+[36mredis            |[0m 1:signal-handler (1695119455) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 10:30:55.882 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 10:30:55.882 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 10:30:55.885 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 10:30:55.885 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 10:31:16.986 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 10:31:16.986 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 10:31:16.986 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 10:31:16.987 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 10:31:16.987 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 10:31:16.987 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 10:31:16.987 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 10:31:16.987 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 10:31:16.987 * RDB age 21 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 10:31:16.987 * RDB memory usage when created 1.11 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 10:31:16.988 * DB loaded from disk: 0.001 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 10:31:16.988 * Ready to accept connections
+[36mredis            |[0m 1:M 19 Sep 2023 10:37:07.612 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 10:37:07.612 * Background saving started by pid 18
+[36mredis            |[0m 18:C 19 Sep 2023 10:37:07.626 * DB saved on disk
+[36mredis            |[0m 18:C 19 Sep 2023 10:37:07.626 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 10:37:07.712 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 10:42:08.042 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 10:42:08.042 * Background saving started by pid 19
+[36mredis            |[0m 19:C 19 Sep 2023 10:42:08.056 * DB saved on disk
+[36mredis            |[0m 19:C 19 Sep 2023 10:42:08.057 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 10:42:08.142 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 10:47:09.032 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 10:47:09.032 * Background saving started by pid 20
+[36mredis            |[0m 20:C 19 Sep 2023 10:47:09.057 * DB saved on disk
+[36mredis            |[0m 20:C 19 Sep 2023 10:47:09.057 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 10:47:09.133 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 11:47:10.100 * 1 changes in 3600 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 11:47:10.100 * Background saving started by pid 21
+[36mredis            |[0m 21:C 19 Sep 2023 11:47:10.123 * DB saved on disk
+[36mredis            |[0m 21:C 19 Sep 2023 11:47:10.124 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 11:47:10.201 * Background saving terminated with success
+[36mredis            |[0m 1:signal-handler (1695127284) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:24.157 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:24.157 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:24.161 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:24.161 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 12:41:40.859 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 12:41:40.859 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 12:41:40.859 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:40.860 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:40.860 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:40.860 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:40.860 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:40.861 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:40.861 * RDB age 16 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:40.861 * RDB memory usage when created 1.16 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:40.863 * DB loaded from disk: 0.003 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 12:41:40.863 * Ready to accept connections
+[36mredis            |[0m 1:M 19 Sep 2023 12:50:48.019 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 12:50:48.020 * Background saving started by pid 19
+[36mredis            |[0m 19:C 19 Sep 2023 12:50:48.028 * DB saved on disk
+[36mredis            |[0m 19:C 19 Sep 2023 12:50:48.029 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 12:50:48.120 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 12:55:49.023 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 12:55:49.023 * Background saving started by pid 20
+[36mredis            |[0m 20:C 19 Sep 2023 12:55:49.048 * DB saved on disk
+[36mredis            |[0m 20:C 19 Sep 2023 12:55:49.049 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 12:55:49.124 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 13:00:50.077 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 13:00:50.077 * Background saving started by pid 21
+[36mredis            |[0m 21:C 19 Sep 2023 13:00:50.102 * DB saved on disk
+[36mredis            |[0m 21:C 19 Sep 2023 13:00:50.103 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 13:00:50.178 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 13:07:55.728 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 13:07:55.728 * Background saving started by pid 22
+[36mredis            |[0m 22:C 19 Sep 2023 13:07:55.744 * DB saved on disk
+[36mredis            |[0m 22:C 19 Sep 2023 13:07:55.745 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 13:07:55.828 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 13:12:56.012 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 13:12:56.013 * Background saving started by pid 23
+[36mredis            |[0m 23:C 19 Sep 2023 13:12:56.037 * DB saved on disk
+[36mredis            |[0m 23:C 19 Sep 2023 13:12:56.037 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 13:12:56.113 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 13:25:14.584 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 13:25:14.584 * Background saving started by pid 24
+[36mredis            |[0m 24:C 19 Sep 2023 13:25:14.602 * DB saved on disk
+[36mredis            |[0m 24:C 19 Sep 2023 13:25:14.603 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 13:25:14.685 * Background saving terminated with success
+[36mredis            |[0m 1:signal-handler (1695131475) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 13:51:15.794 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 13:51:15.794 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 13:51:15.797 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 13:51:15.797 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 13:52:13.700 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 13:52:13.700 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 13:52:13.700 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 13:52:13.701 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 13:52:13.701 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 13:52:13.701 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 13:52:13.701 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 13:52:13.701 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 13:52:13.701 * RDB age 58 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 13:52:13.701 * RDB memory usage when created 1.23 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 13:52:13.703 * DB loaded from disk: 0.002 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 13:52:13.703 * Ready to accept connections
+[36mredis            |[0m 1:M 19 Sep 2023 14:00:49.888 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 14:00:49.889 * Background saving started by pid 18
+[36mredis            |[0m 18:C 19 Sep 2023 14:00:49.892 * DB saved on disk
+[36mredis            |[0m 18:C 19 Sep 2023 14:00:49.892 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 14:00:49.990 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 14:05:50.077 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 14:05:50.077 * Background saving started by pid 19
+[36mredis            |[0m 19:C 19 Sep 2023 14:05:50.093 * DB saved on disk
+[36mredis            |[0m 19:C 19 Sep 2023 14:05:50.093 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 14:05:50.178 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 14:10:51.099 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 14:10:51.100 * Background saving started by pid 20
+[36mredis            |[0m 20:C 19 Sep 2023 14:10:51.121 * DB saved on disk
+[36mredis            |[0m 20:C 19 Sep 2023 14:10:51.121 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 14:10:51.200 * Background saving terminated with success
+[36mredis            |[0m 1:M 19 Sep 2023 14:15:52.051 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 14:15:52.051 * Background saving started by pid 21
+[36mredis            |[0m 21:C 19 Sep 2023 14:15:52.072 * DB saved on disk
+[36mredis            |[0m 21:C 19 Sep 2023 14:15:52.072 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 14:15:52.151 * Background saving terminated with success
+[36mredis            |[0m 1:signal-handler (1695133222) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 14:20:22.179 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 14:20:22.179 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 14:20:22.184 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 14:20:22.184 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 14:20:42.739 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 14:20:42.739 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 14:20:42.739 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 14:20:42.742 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 14:20:42.742 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 14:20:42.742 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 14:20:42.742 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 14:20:42.742 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 14:20:42.742 * RDB age 20 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 14:20:42.742 * RDB memory usage when created 1.42 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 14:20:42.743 * DB loaded from disk: 0.001 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 14:20:42.743 * Ready to accept connections
+[36mredis            |[0m 1:signal-handler (1695133492) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 14:24:52.777 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 14:24:52.777 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 14:24:52.781 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 14:24:52.781 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 14:25:09.094 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 14:25:09.094 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 14:25:09.094 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 14:25:09.097 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 14:25:09.097 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 14:25:09.097 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 14:25:09.097 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 14:25:09.097 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 14:25:09.097 * RDB age 17 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 14:25:09.097 * RDB memory usage when created 1.29 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 14:25:09.099 * DB loaded from disk: 0.002 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 14:25:09.099 * Ready to accept connections
+[36mredis            |[0m 1:signal-handler (1695134359) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 14:39:19.452 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 14:39:19.452 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 14:39:19.456 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 14:39:19.456 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 14:39:39.520 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 14:39:39.520 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 14:39:39.520 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 14:39:39.521 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 14:39:39.521 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 14:39:39.521 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 14:39:39.521 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 14:39:39.521 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 14:39:39.521 * RDB age 20 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 14:39:39.521 * RDB memory usage when created 1.29 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 14:39:39.522 * DB loaded from disk: 0.002 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 14:39:39.522 * Ready to accept connections
+[36mredis            |[0m 1:signal-handler (1695134600) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 14:43:21.052 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 14:43:21.052 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 14:43:21.056 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 14:43:21.056 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 14:43:36.436 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 14:43:36.436 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 14:43:36.436 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 14:43:36.437 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 14:43:36.437 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 14:43:36.437 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 14:43:36.437 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 14:43:36.437 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 14:43:36.437 * RDB age 15 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 14:43:36.437 * RDB memory usage when created 1.29 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 14:43:36.439 * DB loaded from disk: 0.001 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 14:43:36.439 * Ready to accept connections
+[36mredis            |[0m 1:signal-handler (1695134694) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 14:44:54.469 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 14:44:54.469 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 14:44:54.473 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 14:44:54.473 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 14:45:09.764 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 14:45:09.764 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 14:45:09.764 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 14:45:09.765 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 14:45:09.765 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 14:45:09.765 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 14:45:09.765 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 14:45:09.766 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 14:45:09.766 * RDB age 15 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 14:45:09.766 * RDB memory usage when created 1.29 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 14:45:09.767 * DB loaded from disk: 0.002 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 14:45:09.767 * Ready to accept connections
+[36mredis            |[0m 1:M 19 Sep 2023 14:56:29.165 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 14:56:29.165 * Background saving started by pid 19
+[36mredis            |[0m 19:C 19 Sep 2023 14:56:29.170 * DB saved on disk
+[36mredis            |[0m 19:C 19 Sep 2023 14:56:29.170 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 14:56:29.265 * Background saving terminated with success
+[36mredis            |[0m 1:signal-handler (1695135608) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 15:00:08.341 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 15:00:08.341 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 15:00:08.349 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 15:00:08.349 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 15:15:15.273 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 15:15:15.273 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 15:15:15.273 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 15:15:15.274 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 15:15:15.274 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 15:15:15.274 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 15:15:15.274 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 15:15:15.274 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 15:15:15.274 * RDB age 907 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 15:15:15.274 * RDB memory usage when created 1.39 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 15:15:15.276 * DB loaded from disk: 0.001 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 15:15:15.276 * Ready to accept connections
+[36mredis            |[0m 1:M 19 Sep 2023 15:20:16.063 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 15:20:16.064 * Background saving started by pid 19
+[36mredis            |[0m 19:C 19 Sep 2023 15:20:16.083 * DB saved on disk
+[36mredis            |[0m 19:C 19 Sep 2023 15:20:16.083 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 15:20:16.164 * Background saving terminated with success
+[36mredis            |[0m 1:signal-handler (1695137509) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 15:31:49.148 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 15:31:49.148 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 15:31:49.154 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 15:31:49.154 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 15:32:09.289 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 15:32:09.289 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 15:32:09.289 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 15:32:09.290 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 15:32:09.290 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 15:32:09.290 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 15:32:09.290 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 15:32:09.290 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 15:32:09.290 * RDB age 20 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 15:32:09.290 * RDB memory usage when created 1.34 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 15:32:09.291 * DB loaded from disk: 0.001 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 15:32:09.291 * Ready to accept connections
+[36mredis            |[0m 1:signal-handler (1695137823) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 15:37:03.530 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 15:37:03.530 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 15:37:03.537 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 15:37:03.537 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 15:37:19.712 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 15:37:19.712 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 15:37:19.712 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 15:37:19.713 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 15:37:19.713 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 15:37:19.713 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 15:37:19.713 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 15:37:19.713 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 15:37:19.713 * RDB age 16 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 15:37:19.713 * RDB memory usage when created 1.31 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 15:37:19.714 * DB loaded from disk: 0.001 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 15:37:19.714 * Ready to accept connections
+[36mredis            |[0m 1:signal-handler (1695138004) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:04.423 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:04.423 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:04.430 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:04.430 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 19 Sep 2023 15:40:14.681 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 19 Sep 2023 15:40:14.681 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 19 Sep 2023 15:40:14.681 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:14.681 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:14.681 # Server initialized
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:14.681 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:14.681 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:14.681 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:14.681 * RDB age 10 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:14.681 * RDB memory usage when created 1.31 Mb
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:14.683 * DB loaded from disk: 0.002 seconds
+[36mredis            |[0m 1:M 19 Sep 2023 15:40:14.683 * Ready to accept connections
+[36mredis            |[0m 1:M 19 Sep 2023 15:45:15.083 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 19 Sep 2023 15:45:15.083 * Background saving started by pid 19
+[36mredis            |[0m 19:C 19 Sep 2023 15:45:15.098 * DB saved on disk
+[36mredis            |[0m 19:C 19 Sep 2023 15:45:15.099 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 19 Sep 2023 15:45:15.183 * Background saving terminated with success
+[36mredis            |[0m 1:signal-handler (1695138546) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 15:49:06.748 # User requested shutdown...
+[36mredis            |[0m 1:M 19 Sep 2023 15:49:06.748 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 19 Sep 2023 15:49:06.753 * DB saved on disk
+[36mredis            |[0m 1:M 19 Sep 2023 15:49:06.753 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 20 Sep 2023 04:40:35.814 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 20 Sep 2023 04:40:35.814 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 20 Sep 2023 04:40:35.814 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 20 Sep 2023 04:40:35.815 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 20 Sep 2023 04:40:35.815 # Server initialized
+[36mredis            |[0m 1:M 20 Sep 2023 04:40:35.815 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 20 Sep 2023 04:40:35.815 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 20 Sep 2023 04:40:35.815 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 20 Sep 2023 04:40:35.815 * RDB age 46289 seconds
+[36mredis            |[0m 1:M 20 Sep 2023 04:40:35.815 * RDB memory usage when created 1.45 Mb
+[36mredis            |[0m 1:M 20 Sep 2023 04:40:35.818 * DB loaded from disk: 0.003 seconds
+[36mredis            |[0m 1:M 20 Sep 2023 04:40:35.818 * Ready to accept connections
+Stopping redis         ... 
+Stopping redis_insight ... 
+[2A[2KStopping redis         ... [32mdone[0m[2B[1A[2KStopping redis_insight ... [32mdone[0m[1BGracefully stopping... (press Ctrl+C again to force)
+Starting redis_insight ... 
+Starting redis         ... 
+[1A[2KStarting redis         ... [32mdone[0m[1B[2A[2KStarting redis_insight ... [32mdone[0m[2BAttaching to redis, redis_insight
+[36mredis            |[0m 1:C 20 Sep 2023 07:19:55.524 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 20 Sep 2023 07:19:55.524 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 20 Sep 2023 07:19:55.524 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[36mredis            |[0m 1:M 20 Sep 2023 07:19:55.526 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 20 Sep 2023 07:19:55.526 # Server initialized
+[36mredis            |[0m 1:M 20 Sep 2023 07:19:55.526 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 20 Sep 2023 07:19:55.526 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 20 Sep 2023 07:19:55.526 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 20 Sep 2023 07:19:55.526 * RDB age 4 seconds
+[36mredis            |[0m 1:M 20 Sep 2023 07:19:55.526 * RDB memory usage when created 1.31 Mb
+[36mredis            |[0m 1:M 20 Sep 2023 07:19:55.530 * DB loaded from disk: 0.004 seconds
+[36mredis            |[0m 1:M 20 Sep 2023 07:19:55.530 * Ready to accept connections
+[36mredis            |[0m 1:M 20 Sep 2023 07:41:20.855 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 20 Sep 2023 07:41:20.855 * Background saving started by pid 19
+[36mredis            |[0m 19:C 20 Sep 2023 07:41:20.880 * DB saved on disk
+[36mredis            |[0m 19:C 20 Sep 2023 07:41:20.881 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 20 Sep 2023 07:41:20.956 * Background saving terminated with success
+[36mredis            |[0m 1:signal-handler (1695195939) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 20 Sep 2023 07:45:39.725 # User requested shutdown...
+[36mredis            |[0m 1:M 20 Sep 2023 07:45:39.725 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 20 Sep 2023 07:45:39.744 * DB saved on disk
+[36mredis            |[0m 1:M 20 Sep 2023 07:45:39.744 # Redis is now ready to exit, bye bye...
+[36mredis exited with code 0
+[0m[33mredis_insight exited with code 0
+[0mStarting redis ... 
+Starting redis_insight ... 
+[2A[2KStarting redis         ... [32mdone[0m[2B[1A[2KStarting redis_insight ... [32mdone[0m[1BAttaching to redis, redis_insight
+[36mredis            |[0m 1:C 20 Sep 2023 07:47:14.246 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 20 Sep 2023 07:47:14.246 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 20 Sep 2023 07:47:14.246 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:14.247 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:14.247 # Server initialized
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:14.247 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:14.247 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:14.247 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:14.247 * RDB age 13 seconds
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:14.247 * RDB memory usage when created 1.31 Mb
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:14.248 * DB loaded from disk: 0.002 seconds
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:14.248 * Ready to accept connections
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+Exception in thread Thread-6:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+Exception in thread Thread-7:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+Couldn't connect to Docker daemon at http+docker://localhost - is it running?
+
+If it's at a non-standard location, specify the URL with the DOCKER_HOST environment variable.
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+Gracefully stopping... (press Ctrl+C again to force)
+redis is up-to-date
+redis_insight is up-to-date
+Attaching to redis, redis_insight
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[36mredis            |[0m 1:C 20 Sep 2023 07:46:59.189 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 20 Sep 2023 07:46:59.189 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 20 Sep 2023 07:46:59.189 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 20 Sep 2023 07:46:59.189 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 20 Sep 2023 07:46:59.189 # Server initialized
+[36mredis            |[0m 1:M 20 Sep 2023 07:46:59.189 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 20 Sep 2023 07:46:59.189 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 20 Sep 2023 07:46:59.189 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 20 Sep 2023 07:46:59.189 * RDB age 80 seconds
+[36mredis            |[0m 1:M 20 Sep 2023 07:46:59.189 * RDB memory usage when created 1.32 Mb
+[36mredis            |[0m 1:M 20 Sep 2023 07:46:59.191 * DB loaded from disk: 0.001 seconds
+[36mredis            |[0m 1:M 20 Sep 2023 07:46:59.191 * Ready to accept connections
+[36mredis            |[0m 1:signal-handler (1695196021) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:01.501 # User requested shutdown...
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:01.501 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:01.510 * DB saved on disk
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:01.510 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 20 Sep 2023 07:47:14.246 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 20 Sep 2023 07:47:14.246 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 20 Sep 2023 07:47:14.246 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:14.247 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:14.247 # Server initialized
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:14.247 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:14.247 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:14.247 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:14.247 * RDB age 13 seconds
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:14.247 * RDB memory usage when created 1.31 Mb
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:14.248 * DB loaded from disk: 0.002 seconds
+[36mredis            |[0m 1:M 20 Sep 2023 07:47:14.248 * Ready to accept connections
+[36mredis            |[0m 1:signal-handler (1695196762) Received SIGTERM scheduling shutdown...
+[36mredis            |[0m 1:M 20 Sep 2023 07:59:22.734 # User requested shutdown...
+[36mredis            |[0m 1:M 20 Sep 2023 07:59:22.734 * Saving the final RDB snapshot before exiting.
+[36mredis            |[0m 1:M 20 Sep 2023 07:59:22.738 * DB saved on disk
+[36mredis            |[0m 1:M 20 Sep 2023 07:59:22.738 # Redis is now ready to exit, bye bye...
+[36mredis            |[0m 1:C 20 Sep 2023 07:59:43.551 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 20 Sep 2023 07:59:43.551 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 20 Sep 2023 07:59:43.551 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 20 Sep 2023 07:59:43.552 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 20 Sep 2023 07:59:43.552 # Server initialized
+[36mredis            |[0m 1:M 20 Sep 2023 07:59:43.552 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 20 Sep 2023 07:59:43.552 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 20 Sep 2023 07:59:43.552 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 20 Sep 2023 07:59:43.552 * RDB age 21 seconds
+[36mredis            |[0m 1:M 20 Sep 2023 07:59:43.552 * RDB memory usage when created 1.31 Mb
+[36mredis            |[0m 1:M 20 Sep 2023 07:59:43.555 * DB loaded from disk: 0.003 seconds
+[36mredis            |[0m 1:M 20 Sep 2023 07:59:43.555 * Ready to accept connections
+Stopping redis_insight ... 
+Stopping redis         ... 
+[1A[2KStopping redis         ... [32mdone[0m[1B[2A[2KStopping redis_insight ... [32mdone[0m[2BGracefully stopping... (press Ctrl+C again to force)
+Starting redis_insight ... 
+Starting redis         ... 
+[1A[2KStarting redis         ... [32mdone[0m[1B[2A[2KStarting redis_insight ... [32mdone[0m[2BAttaching to redis, redis_insight
+[36mredis            |[0m 1:C 20 Sep 2023 08:00:43.523 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 20 Sep 2023 08:00:43.523 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 20 Sep 2023 08:00:43.523 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 20 Sep 2023 08:00:43.524 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 20 Sep 2023 08:00:43.524 # Server initialized
+[36mredis            |[0m 1:M 20 Sep 2023 08:00:43.524 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 20 Sep 2023 08:00:43.524 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 20 Sep 2023 08:00:43.524 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 20 Sep 2023 08:00:43.524 * RDB age 3 seconds
+[36mredis            |[0m 1:M 20 Sep 2023 08:00:43.524 * RDB memory usage when created 1.31 Mb
+[36mredis            |[0m 1:M 20 Sep 2023 08:00:43.526 * DB loaded from disk: 0.001 seconds
+[36mredis            |[0m 1:M 20 Sep 2023 08:00:43.526 * Ready to accept connections
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[36mredis            |[0m 1:M 20 Sep 2023 08:09:10.001 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 20 Sep 2023 08:09:10.002 * Background saving started by pid 18
+[36mredis            |[0m 18:C 20 Sep 2023 08:09:10.012 * DB saved on disk
+[36mredis            |[0m 18:C 20 Sep 2023 08:09:10.013 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 20 Sep 2023 08:09:10.103 * Background saving terminated with success
+[36mredis            |[0m 1:M 20 Sep 2023 08:14:11.027 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 20 Sep 2023 08:14:11.027 * Background saving started by pid 19
+[36mredis            |[0m 19:C 20 Sep 2023 08:14:11.047 * DB saved on disk
+[36mredis            |[0m 19:C 20 Sep 2023 08:14:11.048 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 20 Sep 2023 08:14:11.128 * Background saving terminated with success
+[36mredis            |[0m 1:M 20 Sep 2023 08:19:12.053 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 20 Sep 2023 08:19:12.053 * Background saving started by pid 20
+[36mredis            |[0m 20:C 20 Sep 2023 08:19:12.064 * DB saved on disk
+[36mredis            |[0m 20:C 20 Sep 2023 08:19:12.064 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 20 Sep 2023 08:19:12.154 * Background saving terminated with success
+[36mredis            |[0m 1:M 20 Sep 2023 08:24:13.067 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 20 Sep 2023 08:24:13.068 * Background saving started by pid 21
+[36mredis            |[0m 21:C 20 Sep 2023 08:24:13.088 * DB saved on disk
+[36mredis            |[0m 21:C 20 Sep 2023 08:24:13.089 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 20 Sep 2023 08:24:13.168 * Background saving terminated with success
+[36mredis            |[0m 1:M 20 Sep 2023 08:29:14.003 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 20 Sep 2023 08:29:14.004 * Background saving started by pid 22
+[36mredis            |[0m 22:C 20 Sep 2023 08:29:14.025 * DB saved on disk
+[36mredis            |[0m 22:C 20 Sep 2023 08:29:14.025 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 20 Sep 2023 08:29:14.104 * Background saving terminated with success
+[36mredis            |[0m 1:M 20 Sep 2023 08:34:15.024 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 20 Sep 2023 08:34:15.024 * Background saving started by pid 23
+[36mredis            |[0m 23:C 20 Sep 2023 08:34:15.040 * DB saved on disk
+[36mredis            |[0m 23:C 20 Sep 2023 08:34:15.040 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 20 Sep 2023 08:34:15.125 * Background saving terminated with success
+[36mredis            |[0m 1:M 20 Sep 2023 08:39:16.052 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 20 Sep 2023 08:39:16.053 * Background saving started by pid 24
+[36mredis            |[0m 24:C 20 Sep 2023 08:39:16.079 * DB saved on disk
+[36mredis            |[0m 24:C 20 Sep 2023 08:39:16.080 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 20 Sep 2023 08:39:16.153 * Background saving terminated with success
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+Exception in thread Thread-6:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+Exception in thread Thread-7:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+Couldn't connect to Docker daemon at http+docker://localhost - is it running?
+
+If it's at a non-standard location, specify the URL with the DOCKER_HOST environment variable.
