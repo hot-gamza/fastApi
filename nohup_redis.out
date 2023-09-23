@@ -1,0 +1,16 @@
+Starting redis ... 
+Starting redis_insight ... 
+[2A[2KStarting redis         ... [32mdone[0m[2B[1A[2KStarting redis_insight ... [32mdone[0m[1BAttaching to redis, redis_insight
+[36mredis            |[0m 1:C 23 Sep 2023 09:06:34.403 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[36mredis            |[0m 1:C 23 Sep 2023 09:06:34.403 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[36mredis            |[0m 1:C 23 Sep 2023 09:06:34.403 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[36mredis            |[0m 1:M 23 Sep 2023 09:06:34.403 * Running mode=standalone, port=6379.
+[36mredis            |[0m 1:M 23 Sep 2023 09:06:34.403 # Server initialized
+[36mredis            |[0m 1:M 23 Sep 2023 09:06:34.403 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+[36mredis            |[0m 1:M 23 Sep 2023 09:06:34.403 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[36mredis            |[0m 1:M 23 Sep 2023 09:06:34.403 * Loading RDB produced by version 6.0.7
+[36mredis            |[0m 1:M 23 Sep 2023 09:06:34.403 * RDB age 117 seconds
+[36mredis            |[0m 1:M 23 Sep 2023 09:06:34.403 * RDB memory usage when created 0.77 Mb
+[36mredis            |[0m 1:M 23 Sep 2023 09:06:34.403 * DB loaded from disk: 0.000 seconds
+[36mredis            |[0m 1:M 23 Sep 2023 09:06:34.403 * Ready to accept connections
+[33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)

@@ -9,9 +9,10 @@ import logging
 import requests
 from redis import Redis
 from rq import Queue
-
+from dotenv import load_dotenv
 
 router = APIRouter()
+load_dotenv()
 
 def get_logger():
     logger = logging.getLogger(__name__)
@@ -19,6 +20,9 @@ def get_logger():
 
 # 작업 상태와 결과 파일을 저장할 딕셔너리
 task_status = {}
+
+SPRING_URL = os.environ.get('SPRING_URL')
+REDIS_CON_IP = os.environ.get('REDIS_CON_IP')
 
 @router.post("/standard")
 async def index(male_files: List[UploadFile] = File(...), female_files: List[UploadFile] = File(...), logger: logging.Logger = Depends(get_logger)):
@@ -45,7 +49,7 @@ async def index(male_files: List[UploadFile] = File(...), female_files: List[Upl
         # background_tasks.add_task(faceswap_and_update_status, unique_id, template_img_path, male_filename, female_filename, logger)
 
         # redis queue
-        redis_queue = Redis(host="192.168.0.13", port=6379)
+        redis_queue = Redis(host=REDIS_CON_IP, port=6379)
         task_queue = Queue("task_queue", connection=redis_queue)
         task_queue.enqueue(faceswap_and_update_status, unique_id, template_img_path, male_filename, female_filename, logger)
 
@@ -66,7 +70,7 @@ async def faceswap_and_update_status(unique_id, template_img_path, male_filename
                 files = {'file': (os.path.basename(result_filepath), f, 'application/octet-stream')}
                 payload = {'task_id': unique_id, 'status': 'completed'}
                 print("go")
-                response = requests.post('http://192.168.0.159:8080/api/v1/saveAiImage', data=payload, files=files)
+                response = requests.post(SPRING_URL+'/api/v1/saveAiImage', data=payload, files=files)
 
                 if response.status_code == 200:
                     if response.text == 'success':
@@ -85,7 +89,7 @@ async def faceswap_and_update_status(unique_id, template_img_path, male_filename
 
         else:
             payload = {'task_id': unique_id, 'status': 'failed'}
-            requests.post('http://192.168.0.159:8080/api/v1/saveAiImage', json=payload)
+            requests.post(SPRING_URL+'/api/v1/saveAiImage', json=payload)
 
             task_status[unique_id] = {'status': 'failed'}
             logger.error(f"Task {unique_id} failed")
