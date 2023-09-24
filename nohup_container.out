@@ -1,0 +1,83 @@
+Starting redis_insight ... 
+Starting redis_queue   ... 
+[1A[2KStarting redis_queue   ... [32mdone[0m[1B[2A[2KStarting redis_insight ... [32mdone[0m[2BAttaching to redis_queue, redis_insight
+[36mredis_insight    |[0m Process 8 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[33mredis_queue      |[0m 1:C 23 Sep 2023 12:58:53.160 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+[33mredis_queue      |[0m 1:C 23 Sep 2023 12:58:53.160 # Redis version=6.0.7, bits=64, commit=00000000, modified=0, pid=1, just started
+[33mredis_queue      |[0m 1:C 23 Sep 2023 12:58:53.160 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+[33mredis_queue      |[0m 1:M 23 Sep 2023 12:58:53.160 * Running mode=standalone, port=6379.
+[33mredis_queue      |[0m 1:M 23 Sep 2023 12:58:53.160 # Server initialized
+[33mredis_queue      |[0m 1:M 23 Sep 2023 12:58:53.160 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+[33mredis_queue      |[0m 1:M 23 Sep 2023 12:58:53.160 * Loading RDB produced by version 6.0.7
+[33mredis_queue      |[0m 1:M 23 Sep 2023 12:58:53.160 * RDB age 26 seconds
+[33mredis_queue      |[0m 1:M 23 Sep 2023 12:58:53.160 * RDB memory usage when created 0.77 Mb
+[33mredis_queue      |[0m 1:M 23 Sep 2023 12:58:53.160 * DB loaded from disk: 0.000 seconds
+[33mredis_queue      |[0m 1:M 23 Sep 2023 12:58:53.160 * Ready to accept connections
+[33mredis_queue      |[0m 1:M 23 Sep 2023 13:07:54.114 * 100 changes in 300 seconds. Saving...
+[33mredis_queue      |[0m 1:M 23 Sep 2023 13:07:54.114 * Background saving started by pid 19
+[33mredis_queue      |[0m 19:C 23 Sep 2023 13:07:54.118 * DB saved on disk
+[33mredis_queue      |[0m 19:C 23 Sep 2023 13:07:54.118 * RDB: 0 MB of memory used by copy-on-write
+[33mredis_queue      |[0m 1:M 23 Sep 2023 13:07:54.215 * Background saving terminated with success
+[33mredis_queue      |[0m 1:M 23 Sep 2023 13:20:02.923 * 100 changes in 300 seconds. Saving...
+[33mredis_queue      |[0m 1:M 23 Sep 2023 13:20:02.923 * Background saving started by pid 20
+[33mredis_queue      |[0m 20:C 23 Sep 2023 13:20:02.924 * DB saved on disk
+[33mredis_queue      |[0m 20:C 23 Sep 2023 13:20:02.925 * RDB: 0 MB of memory used by copy-on-write
+[33mredis_queue      |[0m 1:M 23 Sep 2023 13:20:03.024 * Background saving terminated with success
+[33mredis_queue      |[0m 1:M 23 Sep 2023 13:25:04.069 * 100 changes in 300 seconds. Saving...
+[33mredis_queue      |[0m 1:M 23 Sep 2023 13:25:04.069 * Background saving started by pid 21
+[33mredis_queue      |[0m 21:C 23 Sep 2023 13:25:04.082 * DB saved on disk
+[33mredis_queue      |[0m 21:C 23 Sep 2023 13:25:04.082 * RDB: 0 MB of memory used by copy-on-write
+[33mredis_queue      |[0m 1:M 23 Sep 2023 13:25:04.169 * Background saving terminated with success
+[33mredis_queue      |[0m 1:M 23 Sep 2023 13:30:05.048 * 100 changes in 300 seconds. Saving...
+[33mredis_queue      |[0m 1:M 23 Sep 2023 13:30:05.048 * Background saving started by pid 22
+[33mredis_queue      |[0m 22:C 23 Sep 2023 13:30:05.068 * DB saved on disk
+[33mredis_queue      |[0m 22:C 23 Sep 2023 13:30:05.068 * RDB: 0 MB of memory used by copy-on-write
+[33mredis_queue      |[0m 1:M 23 Sep 2023 13:30:05.149 * Background saving terminated with success
+Stopping redis_insight ... 
+Stopping redis_queue   ... 
+Exception in thread Thread-5:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+Exception in thread Thread-6:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+
+ERROR: for redis_insight  ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+ERROR: for redis_queue  ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+Exception in thread Thread-7:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 665, in urlopen
+    httplib_response = self._make_request(
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 421, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 416, in _make_request
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 416, in _make_request
+  File "/usr/lib/python3/dist-packages/urllib3/connectionpool.py", line 416, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1348, in getresponse
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1348, in getresponse
+    httplib_response = conn.getresponse()
+  File "/usr/lib/python3.8/http/client.py", line 1348, in getresponse
+Couldn't connect to Docker daemon at http+docker://localhost - is it running?
+
+If it's at a non-standard location, specify the URL with the DOCKER_HOST environment variable.
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/lib/python3.8/http/client.py", line 277, in _read_status
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 316, in begin
+Gracefully stopping... (press Ctrl+C again to force)
+    response.begin()
+  File "/usr/lib/python3.8/http/client.py", line 316, in begin

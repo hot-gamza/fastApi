@@ -1,0 +1,8 @@
+Creating redis_queue ... 
+Creating redis_insight ... 
+Host is already in use by another container
+[2A[2KCreating redis_queue   ... [31merror[0m[2B
+ERROR: for redis_queue  Cannot start service redis: driver failed programming external connectivity on endpoint redis_queue (db4bc0dd728b75d0247413d96c5dadaafbd18b53d72316f2c0f06ca2ec0c4a59): Error starting userland proxy: listen tcp4 0.0.0.0:6379: bind: address already in use
+[1A[2KCreating redis_insight ... [32mdone[0m[1B
+ERROR: for redis  Cannot start service redis: driver failed programming external connectivity on endpoint redis_queue (db4bc0dd728b75d0247413d96c5dadaafbd18b53d72316f2c0f06ca2ec0c4a59): Error starting userland proxy: listen tcp4 0.0.0.0:6379: bind: address already in use
+Encountered errors while bringing up the project.
