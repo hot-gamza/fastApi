@@ -14,3 +14,51 @@ Starting redis_insight ...
 [36mredis            |[0m 1:M 23 Sep 2023 09:06:34.403 * DB loaded from disk: 0.000 seconds
 [36mredis            |[0m 1:M 23 Sep 2023 09:06:34.403 * Ready to accept connections
 [33mredis_insight    |[0m Process 9 died: No such process; trying to remove PID file. (/run/avahi-daemon//pid)
+[36mredis            |[0m 1:M 23 Sep 2023 09:22:02.813 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 23 Sep 2023 09:22:02.814 * Background saving started by pid 17
+[36mredis            |[0m 17:C 23 Sep 2023 09:22:02.829 * DB saved on disk
+[36mredis            |[0m 17:C 23 Sep 2023 09:22:02.830 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 23 Sep 2023 09:22:02.915 * Background saving terminated with success
+[36mredis            |[0m 1:M 23 Sep 2023 09:47:50.265 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 23 Sep 2023 09:47:50.265 * Background saving started by pid 18
+[36mredis            |[0m 18:C 23 Sep 2023 09:47:50.268 * DB saved on disk
+[36mredis            |[0m 18:C 23 Sep 2023 09:47:50.268 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 23 Sep 2023 09:47:50.365 * Background saving terminated with success
+[36mredis            |[0m 1:M 23 Sep 2023 09:52:51.084 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 23 Sep 2023 09:52:51.084 * Background saving started by pid 19
+[36mredis            |[0m 19:C 23 Sep 2023 09:52:51.098 * DB saved on disk
+[36mredis            |[0m 19:C 23 Sep 2023 09:52:51.098 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 23 Sep 2023 09:52:51.185 * Background saving terminated with success
+[36mredis            |[0m 1:M 23 Sep 2023 09:57:52.050 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 23 Sep 2023 09:57:52.051 * Background saving started by pid 20
+[36mredis            |[0m 20:C 23 Sep 2023 09:57:52.066 * DB saved on disk
+[36mredis            |[0m 20:C 23 Sep 2023 09:57:52.067 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 23 Sep 2023 09:57:52.152 * Background saving terminated with success
+[36mredis            |[0m 1:M 23 Sep 2023 10:57:53.028 * 1 changes in 3600 seconds. Saving...
+[36mredis            |[0m 1:M 23 Sep 2023 10:57:53.029 * Background saving started by pid 21
+[36mredis            |[0m 21:C 23 Sep 2023 10:57:53.049 * DB saved on disk
+[36mredis            |[0m 21:C 23 Sep 2023 10:57:53.050 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 23 Sep 2023 10:57:53.130 * Background saving terminated with success
+[36mredis            |[0m 1:M 23 Sep 2023 11:57:54.014 * 1 changes in 3600 seconds. Saving...
+[36mredis            |[0m 1:M 23 Sep 2023 11:57:54.015 * Background saving started by pid 22
+[36mredis            |[0m 22:C 23 Sep 2023 11:57:54.034 * DB saved on disk
+[36mredis            |[0m 22:C 23 Sep 2023 11:57:54.035 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 23 Sep 2023 11:57:54.115 * Background saving terminated with success
+[36mredis            |[0m 1:M 23 Sep 2023 12:57:55.036 * 1 changes in 3600 seconds. Saving...
+[36mredis            |[0m 1:M 23 Sep 2023 12:57:55.037 * Background saving started by pid 23
+[36mredis            |[0m 23:C 23 Sep 2023 12:57:55.052 * DB saved on disk
+[36mredis            |[0m 23:C 23 Sep 2023 12:57:55.053 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 23 Sep 2023 12:57:55.138 * Background saving terminated with success
+[36mredis            |[0m 1:M 23 Sep 2023 13:23:30.397 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 23 Sep 2023 13:23:30.397 * Background saving started by pid 24
+[36mredis            |[0m 24:C 23 Sep 2023 13:23:30.401 * DB saved on disk
+[36mredis            |[0m 24:C 23 Sep 2023 13:23:30.401 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 23 Sep 2023 13:23:30.498 * Background saving terminated with success
+[36mredis            |[0m 1:M 23 Sep 2023 13:28:31.034 * 100 changes in 300 seconds. Saving...
+[36mredis            |[0m 1:M 23 Sep 2023 13:28:31.035 * Background saving started by pid 25
+[36mredis            |[0m 25:C 23 Sep 2023 13:28:31.051 * DB saved on disk
+[36mredis            |[0m 25:C 23 Sep 2023 13:28:31.052 * RDB: 0 MB of memory used by copy-on-write
+[36mredis            |[0m 1:M 23 Sep 2023 13:28:31.136 * Background saving terminated with success
+Stopping redis_insight ... 
+Stopping redis         ... 
+[1A[2KStopping redis         ... [32mdone[0m[1B[2A[2KStopping redis_insight ... [32mdone[0m[2BGracefully stopping... (press Ctrl+C again to force)
