@@ -4,7 +4,7 @@ import os
 import random
 import uuid
 from utils.upload import handle_upload
-from utils.faceswap import faceswap
+from utils.logoswap import logoswap
 import logging
 import requests
 from redis import Redis
@@ -66,7 +66,7 @@ async def index(male_files: List[UploadFile] = File(...), female_files: List[Upl
 
 async def faceswap_and_update_status(unique_id, template_img_path, male_filename, female_filename, logger):
     try:
-        result_filepath_list = await faceswap(template_img_path, male_filename, female_filename)
+        result_filepath_list = await logoswap(template_img_path, male_filename, female_filename)
         print("well")
         if result_filepath_list:
             result_filepath = result_filepath_list[0]

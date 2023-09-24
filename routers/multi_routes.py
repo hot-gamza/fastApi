@@ -38,7 +38,7 @@ async def premium(male_files: List[UploadFile] = File(...), female_files: List[U
         # 템플릿 이미지 경로들을 가져옴
         all_template_img_paths = [os.path.join("template", filename) for filename in os.listdir("template") if filename.endswith('.png')]
         
-        # 랜덤으로 3개의 이미지만 선택
+        # 랜덤으로 3개의 이미지만 선택(중복 방지 == random.sample)
         selected_template_img_paths = random.sample(all_template_img_paths, 3)
 
         # 비동기 작업으로 등록
