@@ -39,10 +39,20 @@ async def faceswap(template_img: str, male_face_imgs: List[str], female_face_img
             temp_result_path = os.path.join(temp_dir, fn)
 
             male_img_read = cv2.imread(male_face_img)
-            male_copy_face = app.get(male_img_read)[0]
+            male_faces = app.get(male_img_read)
+            
+            if not male_faces:
+                raise ValueError(f"No face detected in the male image: {male_face_img}")
+            
+            male_copy_face = male_faces[0]
 
             female_img_read = cv2.imread(female_face_img)
-            female_copy_face = app.get(female_img_read)[0]
+            female_faces = app.get(female_img_read)
+            
+            if not female_faces:
+                raise ValueError(f"No face detected in the female image: {female_face_img}")
+            
+            female_copy_face = female_faces[0]
 
             cnt = 0
             for find_face in template_faces:

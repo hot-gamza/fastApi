@@ -80,7 +80,8 @@ async def faceswap_and_update_status(unique_id, template_img_path, male_filename
                     SPRING_URL+'/api/v1/saveAiImage', data=payload, files=files)
 
                 if response.status_code == 200:
-                    if response.text == 'success':
+                    response_json = response.json()
+                    if response_json.get('status') == 'SUCCESS':
                         logger.info(
                             f"Successfully sent the file for task {unique_id}")
                     else:
@@ -106,4 +107,9 @@ async def faceswap_and_update_status(unique_id, template_img_path, male_filename
 
     except Exception as e:
         logger.error(f"An error occurred: {e}")
+
+        # 작업 실패 상태를 서버에 보내기
+        payload = {'task_id': unique_id, 'status': 'failed'}
+        requests.post(SPRING_URL+'/api/v1/saveAiImage', json=payload)
+
         task_status[unique_id] = {'status': 'failed'}
